@@ -3,7 +3,8 @@
 pkg/client/node_modules/
 pkg/client/.vite-cache/
 pkg/client/dist/
-
+tmp/
+ehosts.exe
 # Editor directories and files
 .idea
 .vscode
@@ -13,3 +14,4 @@ pkg/client/dist/
 *.sln
 
 package-lock.json
+pnpm-lock.json
