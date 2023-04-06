@@ -1,0 +1,15 @@
+.DS_Store
+
+pkg/client/node_modules/
+pkg/client/.vite-cache/
+pkg/client/dist/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+package-lock.json
