@@ -1,7 +1,7 @@
 package router
 
 import (
-	"ehosts/public/middleware"
+	middleware "ehosts/internal/middlewares"
 	"log"
 
 	"github.com/gin-gonic/gin"
@@ -18,6 +18,13 @@ func Init(e *gin.Engine) {
 
 // 注册路由
 func registerRouter(router *gin.Engine) {
+	router.Static("/assets", "./template/client/dist/assets")
+	router.LoadHTMLGlob("template/client/dist/index.html")
+	router.NoRoute(func(c *gin.Context) {
+		// c.File("index.html")
+		c.HTML(200, "index.html", gin.H{"message": "这是模板渲染"})
+
+	})
 	engine := router.Group("/")
 	engine.Use(middleware.Cors())
 

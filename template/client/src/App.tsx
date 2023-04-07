@@ -1,7 +1,6 @@
 import { IntlProvider } from "react-intl";
 import zh from "@/locales/zh_CN/index";
 import React, { useEffect, Suspense } from "react";
-import { login } from "./service/apis";
 import RouterComp from "@/router";
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
 	};
 
 	useEffect(() => {
-		login();
+		// login();
 	}, []);
 	return (
 		<Suspense fallback={<div>loading</div>}>

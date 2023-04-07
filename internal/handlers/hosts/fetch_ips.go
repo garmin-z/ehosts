@@ -1,7 +1,7 @@
-package githubIp
+package handlers
 
 import (
-	"ehosts/utils"
+	"ehosts/pkg/utils"
 	"errors"
 	"fmt"
 	"net/http"

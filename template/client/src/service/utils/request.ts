@@ -25,7 +25,7 @@ class HttpService {
 	constructor() {
 		const controller = new AbortController();
 		this.http = axios.create({
-			baseURL: "/apis",
+			baseURL: "http://192.168.1.111:16033/api",
 			timeout: 60000,
 		});
 
